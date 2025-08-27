@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-awesome: #1b1f5c;
+  /* --color-awesome-400: #1b1f5c; */
+}
+
+.my-class {
+  box-shadow: 4px 20px red, -10px -5px purple;
+}
+
+/* ::-webkit-progress-value {
+  background-color: blue;
+} */
+
+.my-avatar {
+  @apply w-1 outline outline-red-500 shadow-2xl shadow-red-500;
+}
