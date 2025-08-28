@@ -1,49 +1,59 @@
+// Ausgabe in der Browser-Konsole (F12 oder Strg+Shift+I drücken)
 console.log('Hallo aus der script.js');
 
+// HTML-Element finden und Text ändern
 document.querySelector('h1').textContent = 'Manipuliert mit JavaScript!';
 
-// ('Wörter');
+// STRING WERTE - um Text zu speichern
+// 'Wörter';
 
+// BOOLEAN WERTE - wahr oder falsch
 // true;
 // false;
 
 /*
- Dies ist ein mehrzeiliger Kommentar.
- Hallo
+ Mehrzeiliger Kommentar
+ für längere Erklärungen
 */
 
-let myNumber = 5;
-myNumber = 'ein Wort';
+// VARIABLEN - Behälter für Daten
+let myNumber = 5; // Zahl speichern
+myNumber = 'ein Wort'; // Wert ändern (jetzt Text)
 
-// console.log(40 + 4);
-// console.log(40 - 4);
-// console.log(40 * 4);
-// console.log(40 / 4);
-// console.log(42 % 4);
+// MATHEMATISCHE OPERATIONEN
+// console.log(40 + 4);    // Addition: 44
+// console.log(40 - 4);    // Subtraktion: 36
+// console.log(40 * 4);    // Multiplikation: 160
+// console.log(40 / 4);    // Division: 10
+// console.log(42 % 4);    // Rest (Modulo): 2
 
 // console.log(myNumber * 5);
 // console.log(myNumber + 5);
 
 // console.log(myNumber);
 
-// console.log(age > miniumAgeForDriversLicense);
-// console.log(age < miniumAgeForDriversLicense);
-// console.log(age <= miniumAgeForDriversLicense);
-// console.log(age === miniumAgeForDriversLicense);
-// console.log(age == miniumAgeForDriversLicense);
+// VERGLEICHSOPERATOREN - geben true/false zurück
+// console.log(age > miniumAgeForDriversLicense);    // größer als
+// console.log(age < miniumAgeForDriversLicense);    // kleiner als
+// console.log(age <= miniumAgeForDriversLicense);   // kleiner gleich
+// console.log(age === miniumAgeForDriversLicense);  // exakt gleich (empfohlen)
+// console.log(age == miniumAgeForDriversLicense);   // gleich (weniger strikt)
 
-// console.log(age !== miniumAgeForDriversLicense);
+// console.log(age !== miniumAgeForDriversLicense);  // ungleich
 
-// console.log(17 === 16 && 20 === 20);
+// LOGISCHE OPERATOREN
+// console.log(17 === 16 && 20 === 20);  // UND: beide müssen wahr sein
+// console.log(17 === 16 || 20 === 20);  // ODER: eine muss wahr sein
 
-// console.log(17 === 16 || 20 === 20);
-
+// Kurze Schreibweise für einfache Bedingungen
 // 40 === 40 && console.log('Eine Aktion ausführen');
 // 40 === 41 || console.log('Eine andere Aktion ausführen');
 
+// KONSTANTEN - können nicht geändert werden
 const age = 25;
 const miniumAgeForDriversLicense = 18;
 
+// IF-ELSE BEDINGUNGEN - Code nur unter bestimmten Bedingungen ausführen
 if (age === miniumAgeForDriversLicense) {
   console.log('Du könntst deinen Führerschein machen');
 } else if (age < miniumAgeForDriversLicense) {
@@ -52,6 +62,7 @@ if (age === miniumAgeForDriversLicense) {
   console.log('Du bist schon älter als die Mindestanforderung');
 }
 
+// BLOCK SCOPE - Variablen sind nur in ihren {} verfügbar
 // {
 //   const blockScopeVar = 123;
 //   console.log(blockScopeVar);
@@ -62,26 +73,29 @@ if (age === miniumAgeForDriversLicense) {
 //   }
 // }
 
+// FUNKTIONEN - wiederverwendbare Codeblöcke
 function incrementAge(currentAge) {
-  const someFunctionVariable = 'Hallo';
+  const someFunctionVariable = 'Hallo'; // nur in Funktion verfügbar
   currentAge = currentAge + 1;
-  return currentAge;
+  return currentAge; // Wert zurückgeben
 }
 
+// Variable außerhalb der Funktion nicht verfügbar
 // try {
 //   console.log(someFunctionVariable);
 // } catch (error) {}
 
+// FUNKTIONEN AUFRUFEN
 // let myAge = 25;
 // console.log(myAge);
 
-// myAge = incrementAge(myAge);
+// myAge = incrementAge(myAge);  // Funktion nutzen
 // console.log(myAge);
 
 // incrementAge(38);
-
 // incrementAge(42);
 
+// WHILE SCHLEIFE - wiederholt Code solange Bedingung wahr ist
 // let myAge = 25;
 
 // while (myAge < 30) {
@@ -89,13 +103,16 @@ function incrementAge(currentAge) {
 //   myAge = incrementAge(myAge);
 // }
 
+// WHILE SCHLEIFE mit Countdown
 let counter = 10;
 
 while (counter > 0) {
   console.log('Another round in the Loop');
-  counter--;
+  counter--; // verkürzte Schreibweise für: counter = counter - 1
 }
 
+// FOR SCHLEIFE - kompakte Form für feste Anzahl Wiederholungen
 for (let i = 0; i < 100; i++) {
+  // Start; Bedingung; Schritt
   console.log('Ein neuer Tag in der Schleife!');
 }
